@@ -1,6 +1,6 @@
 {
   "name": "shortden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight TypeScript package to mask and shorten long strings or addresses, customizable start/end lengths and hidden characters.",
   "main": "./src/index.js",
   "scripts": {
