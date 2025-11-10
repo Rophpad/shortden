@@ -1,0 +1,33 @@
+{
+  "name": "shortden",
+  "version": "1.0.0",
+  "description": "Lightweight TypeScript package to mask and shorten long strings or addresses, customizable start/end lengths and hidden characters.",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rophpad/shortden.git"
+  },
+  "keywords": ["shorten",
+  "string",
+  "truncate",
+  "mask",
+  "address",
+  "crypto",
+  "typescript",
+  "utility",
+  "abbreviate",
+  "hide"],
+  "author": "rophpad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rophpad/shortden/issues"
+  },
+  "homepage": "https://github.com/Rophpad/shortden#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
