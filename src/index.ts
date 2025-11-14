@@ -1,23 +1,23 @@
-export function shortenAddress(
-  fullAddress: string,
-  reduction: number,
-  startLength: number,
-  endLength: number,
+export function shortden(
+  fullChars: string,
+  reductedCharsLength: number,
+  startCharsLength: number,
+  endCharsLength: number,
   hiddenChar: string = '*'
 ): string {
-  const minLength = startLength + endLength + 1;
-  if (reduction < minLength) {
+  const minLength = startCharsLength + endCharsLength + 1;
+  if (reductedCharsLength < minLength) {
     throw new Error(`Reduction must be at least ${minLength}`);
   }
 
-  if (fullAddress.length <= reduction) {
-    return fullAddress;
+  if (fullChars.length < reductedCharsLength) {
+    return fullChars;
   }
 
-  const hiddenLength = reduction - startLength - endLength;
-  const start = fullAddress.slice(0, startLength);
-  const end = fullAddress.slice(fullAddress.length - endLength);
+  const hiddenLength = reductedCharsLength - startCharsLength - endCharsLength;
+  const start = fullChars.slice(0, startCharsLength);
+  const end = fullChars.slice(fullChars.length - endCharsLength);
   const hidden = hiddenChar.repeat(hiddenLength);
 
   return `${start}${hidden}${end}`;
-
+}
